@@ -108,7 +108,7 @@ optimG = torch.optim.Adam(netG.parameters(), lr=lr, betas=(0.5, 0.999))
 from PIL import ImageFile
 import PIL
 ImageFile.LOAD_TRUNCATED_IMAGES = True
-dataset = datasets.ImageFolder(root="drive/MyDrive/Paintings",
+dataset = datasets.ImageFolder(root=root2data,
                      transform=transforms.Compose(
                          [
                           transforms.Resize((X_DIM,X_DIM)),
