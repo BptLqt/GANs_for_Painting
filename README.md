@@ -4,7 +4,7 @@ In order to generate paintings, this program uses generative adversarial network
 
 Here we uses neural networks (MLPs) that we train using generative adversarial training.
 
-The overall model is composed of two sub-models, the generator <img src="https://render.githubusercontent.com/render/math?math=G(\textbf z, \theta_G)"> that takes a latent vector composed of $n$ values from a Gaussian distribution.
+The overall model is composed of two sub-models, the generator <img src="https://render.githubusercontent.com/render/math?math=G(\textbf z, \theta_G)"> that takes a latent vector composed of $n$ values sampled from a Gaussian distribution.
 And a discriminator <img src="https://render.githubusercontent.com/render/math?math=D(\textbf x, \theta_D)"> that outputs a probability.
 G, here, takes a latent vector of lenth 100 and output an vector of length 4096, that can be rearranged in an images of shape 64 * 64.
 D, here, takes an image in input and output the probability that the image is in fact a real image or a fake image.
